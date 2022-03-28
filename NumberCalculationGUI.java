@@ -175,9 +175,9 @@ public class NumberCalculationGUI extends javax.swing.JFrame {
 
     private void btnEscActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEscActionPerformed
         int option = JOptionPane.showConfirmDialog(rootPane, "Exit?");
-                if (option == JOptionPane.YES_OPTION){
-                    System.exit(0);
-                }
+        if (option == JOptionPane.YES_OPTION) {
+            System.exit(0);
+        }
     }//GEN-LAST:event_btnEscActionPerformed
 
     private void btnCalculateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalculateActionPerformed
@@ -187,11 +187,11 @@ public class NumberCalculationGUI extends javax.swing.JFrame {
         num1 = Float.parseFloat(txtFirstNum.getText());
         num2 = Float.parseFloat(txtSecondNum.getText());
 
-        if (Sign == "+") {
+        if (Sign.equals("+")) {
             result = num1 + num2;
-        } else if (Sign == "-") {
+        } else if (Sign.equals("-")) {
             result = num1 - num2;
-        } else if (Sign == "*") {
+        } else if (Sign.equals("*")) {
             result = num1 * num2;
         } else {
             result = num1 / num2;
