@@ -36,7 +36,7 @@ public class NumberCalculationGUI extends javax.swing.JFrame {
         txtFirstNum = new javax.swing.JTextField();
         txtSecondNum = new javax.swing.JTextField();
         txtResult = new javax.swing.JTextField();
-        btnAdd = new javax.swing.JButton();
+        btnCalculate = new javax.swing.JButton();
         btnClear = new javax.swing.JButton();
         cbxSign = new javax.swing.JComboBox<>();
         jLabel4 = new javax.swing.JLabel();
@@ -61,10 +61,10 @@ public class NumberCalculationGUI extends javax.swing.JFrame {
             }
         });
 
-        btnAdd.setText("Add\n");
-        btnAdd.addActionListener(new java.awt.event.ActionListener() {
+        btnCalculate.setText("Calculate");
+        btnCalculate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAddActionPerformed(evt);
+                btnCalculateActionPerformed(evt);
             }
         });
 
@@ -102,7 +102,7 @@ public class NumberCalculationGUI extends javax.swing.JFrame {
                                 .addComponent(txtResult, javax.swing.GroupLayout.DEFAULT_SIZE, 234, Short.MAX_VALUE)))
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnAdd)
+                            .addComponent(btnCalculate)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                             .addComponent(btnClear)
                             .addGap(14, 14, 14)))
@@ -137,7 +137,7 @@ public class NumberCalculationGUI extends javax.swing.JFrame {
                     .addComponent(txtResult, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnAdd)
+                    .addComponent(btnCalculate)
                     .addComponent(btnClear))
                 .addGap(24, 24, 24))
         );
@@ -180,7 +180,7 @@ public class NumberCalculationGUI extends javax.swing.JFrame {
                 }
     }//GEN-LAST:event_btnEscActionPerformed
 
-    private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
+    private void btnCalculateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalculateActionPerformed
         float num1, num2, result = 0;
         String Sign;
         Sign = (String) cbxSign.getSelectedItem();
@@ -198,7 +198,7 @@ public class NumberCalculationGUI extends javax.swing.JFrame {
         }
 
         txtResult.setText("" + result);
-    }//GEN-LAST:event_btnAddActionPerformed
+    }//GEN-LAST:event_btnCalculateActionPerformed
 
     private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearActionPerformed
         txtFirstNum.setText("");
@@ -251,7 +251,7 @@ public class NumberCalculationGUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAdd;
+    private javax.swing.JButton btnCalculate;
     private javax.swing.JButton btnClear;
     private javax.swing.JButton btnEsc;
     private javax.swing.JComboBox<String> cbxSign;
