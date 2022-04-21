@@ -86,7 +86,7 @@ public class LetterPostShop {
                     System.out.print("\tEnter weight (g) : ");
                     weight = sc.nextInt();
                     baht = noramlLetter(weight);
-                    System.out.println("\tNormal Letter Service Price : "+(baht+13)+" baht");
+                    System.out.println("\tRegister Letter Service Price : "+(baht+13)+" baht");
                     System.out.println("");
                     break;
                 case 3:
